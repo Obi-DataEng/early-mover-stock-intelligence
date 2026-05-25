@@ -1,0 +1,37 @@
+{
+  "run_date": "2026-05-17",
+  "picks": [
+    {
+      "ticker": "CXDO",
+      "company_name": "Crexendo, Inc.",
+      "price": 9.89,
+      "sector": "Communication Services",
+      "total_score": 37.6,
+      "signal_breakdown": {
+        "insider": 100,
+        "reddit": 0,
+        "options": 38,
+        "catalyst": 0,
+        "squeeze": 34
+      },
+      "position_size": 7.5,
+      "stop_loss": 8.11,
+      "price_target": 14.84,
+      "reddit_mentions": 0,
+      "reddit_velocity": 0.0,
+      "catalysts": [],
+      "headlines": [],
+      "rationale": "Insider buying at 100/100 over the last 14 days is the only meaningful signal here\u2014management putting skin in the game suggests conviction, but that's where the bull case ends. There's zero near-term catalyst, no Reddit momentum, and the company operates in a crowded telecom space with limited visibility into what's driving the insider accumulation. This is a pure insider-bet play with execution risk and no near-term catalyst to unlock value.",
+      "top_signal": "Heavy insider buying in the last 14 days indicates management confidence, but without a corresponding catalyst or narrative catalyst to drive institutional interest.",
+      "risk": "Lack of any identifiable catalyst in the next 30 days combined with near-zero retail interest means this could stall indefinitely despite insider accumulation.",
+      "sentiment": "speculative"
+    }
+  ],
+  "watchlist": [],
+  "weekly_summary": "# Weekly Small-Cap Stock Picks\n\nThis week we're focused on communication services, where we've identified CXDO as a company positioned to capitalize on evolving industry dynamics. Here's our analysis of why it deserves your attention right now.",
+  "metadata": {
+    "stocks_screened": 200,
+    "stocks_scored": 14,
+    "picks_generated": 1
+  }
+}

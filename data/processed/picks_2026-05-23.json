@@ -1,0 +1,213 @@
+{
+  "run_date": "2026-05-23",
+  "picks": [
+    {
+      "ticker": "UP",
+      "company_name": "Wheels Up Experience Inc.",
+      "price": 9.11,
+      "sector": "Industrials",
+      "total_score": 37.6,
+      "signal_breakdown": {
+        "insider": 100,
+        "reddit": 0,
+        "options": 23,
+        "catalyst": 0,
+        "squeeze": 54
+      },
+      "position_size": 7.5,
+      "stop_loss": 7.47,
+      "price_target": 13.66,
+      "reddit_mentions": 0,
+      "reddit_velocity": 0.0,
+      "catalysts": [],
+      "headlines": [],
+      "rationale": "Insider buying at 100/100 is the only legitimate signal here\u2014insiders accumulating at $9.11 suggests conviction that the stock is mispriced, though it's unclear why given zero identified catalysts in the next 30 days. The moderate short squeeze setup (54/100) could provide momentum if insider accumulation draws retail attention, but this is a speculative tailwind, not a driver. The core problem: no near-term catalyst, zero Reddit traction, and weak momentum activity mean this is a contrarian bet on insider knowledge rather than a technical setup, making it high-risk without fundamental visibility into what management sees.",
+      "top_signal": "Insider buying at 100/100 over the last 14 days indicates management believes the stock is undervalued, even with no announced catalysts.",
+      "risk": "Complete absence of near-term catalysts and no public news means insiders may be wrong, or the move could take months to materialize while the stock drifts lower.",
+      "sentiment": "speculative"
+    },
+    {
+      "ticker": "VITL",
+      "company_name": "Vital Farms, Inc.",
+      "price": 10.13,
+      "sector": "Consumer Defensive",
+      "total_score": 35.9,
+      "signal_breakdown": {
+        "insider": 100,
+        "reddit": 0,
+        "options": 0,
+        "catalyst": 0,
+        "squeeze": 73
+      },
+      "position_size": 7.5,
+      "stop_loss": 8.31,
+      "price_target": 15.2,
+      "reddit_mentions": 0,
+      "reddit_velocity": 0.0,
+      "catalysts": [],
+      "headlines": [],
+      "rationale": "Vital Farms shows aggressive insider accumulation (100/100 signal) over the past two weeks, suggesting management sees undervalued equity at $10.13\u2014a meaningful vote of confidence. The 73/100 short-squeeze setup indicates elevated short interest relative to float, creating potential for a sharp snapback if sentiment shifts or insiders' conviction proves warranted. However, the complete absence of near-term catalysts, zero retail momentum, and flat options activity mean this move is purely dependent on insiders being right and shorts capitulating; without a narrative catalyst or earnings surprise, the stock could languish indefinitely.",
+      "top_signal": "Heavy insider buying in past 14 days signals management believes shares are undervalued at current levels.",
+      "risk": "No identified catalysts in next 30 days and zero retail or institutional momentum mean the insider thesis could sit dormant for months, leaving early buyers underwater.",
+      "sentiment": "speculative"
+    },
+    {
+      "ticker": "ASPN",
+      "company_name": "Aspen Aerogels, Inc.",
+      "price": 5.79,
+      "sector": "Industrials",
+      "total_score": 35.7,
+      "signal_breakdown": {
+        "insider": 100,
+        "reddit": 0,
+        "options": 33,
+        "catalyst": 0,
+        "squeeze": 28
+      },
+      "position_size": 7.5,
+      "stop_loss": 4.75,
+      "price_target": 8.69,
+      "reddit_mentions": 0,
+      "reddit_velocity": 0.0,
+      "catalysts": [],
+      "headlines": [],
+      "rationale": "Insider buying at 100/100 is the sole bright spot here \u2014 executives accumulating shares signals conviction, but it's a lonely signal in an otherwise quiet tape with zero Reddit momentum and no near-term catalysts. The setup is essentially a patient accumulation play dependent on insiders' knowledge of future business inflection, but without visibility into what that inflection is, you're betting on opaque management insight rather than market catalysts. The composite score of 35.7 reflects the reality: this is a speculative 'trust the insiders' contrarian bet, not a technical breakout or momentum squeeze.",
+      "top_signal": "Insider buying at 100/100 over the past 14 days indicates management sees value below $6, but the absence of any public catalyst means they're betting on information you don't have.",
+      "risk": "Complete lack of near-term catalysts and zero momentum/retail interest means this could languish for months or deteriorate further if the insider thesis doesn't materialize.",
+      "sentiment": "speculative"
+    },
+    {
+      "ticker": "GSIT",
+      "company_name": "GSI Technology, Inc.",
+      "price": 9.66,
+      "sector": "Technology",
+      "total_score": 35.3,
+      "signal_breakdown": {
+        "insider": 100,
+        "reddit": 0,
+        "options": 31,
+        "catalyst": 0,
+        "squeeze": 27
+      },
+      "position_size": 7.5,
+      "stop_loss": 7.92,
+      "price_target": 14.49,
+      "reddit_mentions": 0,
+      "reddit_velocity": 0.0,
+      "catalysts": [],
+      "headlines": [],
+      "rationale": "Insider buying at 100/100 is the only bright spot here\u2014executives are putting real money in, which typically signals conviction that shares are undervalued. However, with zero identified catalysts in the next 30 days, no Reddit momentum, weak options activity, and a composite score of 35, this is a patient accumulation play at best, not a near-term breakout setup. The stock is essentially flying blind without near-term news or events to trigger buying, making it a speculative bet on eventual visibility rather than an imminent mover.",
+      "top_signal": "Heavy insider buying suggests management believes shares are deeply discounted and worth holding for a longer-term rebound.",
+      "risk": "Complete absence of near-term catalysts and minimal market attention means this could languish flat for months, and insider conviction doesn't guarantee execution or turnaround.",
+      "sentiment": "speculative"
+    },
+    {
+      "ticker": "WNC",
+      "company_name": "Wabash National Corporation",
+      "price": 7.77,
+      "sector": "Industrials",
+      "total_score": 31.0,
+      "signal_breakdown": {
+        "insider": 100,
+        "reddit": 0,
+        "options": 4,
+        "catalyst": 0,
+        "squeeze": 34
+      },
+      "position_size": 7.5,
+      "stop_loss": 6.37,
+      "price_target": 11.65,
+      "reddit_mentions": 0,
+      "reddit_velocity": 0.0,
+      "catalysts": [],
+      "headlines": [],
+      "rationale": "Insider buying at 100/100 intensity over the past 14 days is the only substantive signal here\u2014company insiders are accumulating shares, typically a contrarian bullish indicator when retail sentiment is absent. The stock trades at $7.77 with minimal options activity and no near-term catalysts, meaning any move will be driven by continued insider accumulation or a surprise earnings beat. This is a pure speculative play on insider conviction in a beaten-down industrial name; the risk is that insiders are simply rebalancing or that the underlying truck trailer/heavy equipment business remains structurally weak with no near-term visibility.",
+      "top_signal": "Insider buying intensity at 100/100 over 14 days signals management confidence when the stock is dormant and unloved.",
+      "risk": "No catalysts identified within 30 days and zero retail attention means this could remain dead money indefinitely; insiders may be buying for reasons unrelated to near-term appreciation.",
+      "sentiment": "speculative"
+    }
+  ],
+  "watchlist": [
+    {
+      "ticker": "ATOM",
+      "company_name": "Atomera Incorporated",
+      "price": 9.24,
+      "sector": "Technology",
+      "total_score": 30.2,
+      "signal_breakdown": {
+        "insider": 100,
+        "reddit": 0,
+        "options": 2,
+        "catalyst": 0,
+        "squeeze": 32
+      },
+      "position_size": 7.5,
+      "stop_loss": 7.58,
+      "price_target": 13.86,
+      "reddit_mentions": 0,
+      "reddit_velocity": 0.0,
+      "catalysts": [],
+      "headlines": [],
+      "rationale": "Atomera's perfect insider-buying score is the only material signal here\u2014insiders accumulating at $9.24 suggests conviction that current valuation is depressed, typically a contrarian positive. However, the complete absence of momentum (0 Reddit mentions, 2/100 options activity), no near-term catalysts, and a thin 32/100 short-squeeze setup mean this is a patience play, not an imminent breakout. The risk is brutal: without a news catalyst or earnings surprise, this could languish or drop further as insider buying alone rarely moves micro-caps without additional fuel.",
+      "top_signal": "Insider buying at 100/100 signal strength indicates management believes current $9.24 valuation is attractive and undervalues the business.",
+      "risk": "Complete lack of near-term catalysts, Reddit/social momentum, and options activity means this could remain flat or decline while you wait for insiders' thesis to materialize.",
+      "sentiment": "speculative"
+    },
+    {
+      "ticker": "LZM",
+      "company_name": "Lifezone Metals Limited",
+      "price": 5.09,
+      "sector": "Basic Materials",
+      "total_score": 27.2,
+      "signal_breakdown": {
+        "insider": 100,
+        "reddit": 0,
+        "options": 2,
+        "catalyst": 0,
+        "squeeze": 12
+      },
+      "position_size": 7.5,
+      "stop_loss": 4.17,
+      "price_target": 7.63,
+      "reddit_mentions": 0,
+      "reddit_velocity": 0.0,
+      "catalysts": [],
+      "headlines": [],
+      "rationale": "LZM's 100/100 insider buying signal in the last 14 days is the only real conviction here \u2014 insiders don't load up unless they see value or know something catalytic is coming. However, the complete absence of retail interest (0 Reddit mentions), zero near-term catalysts, and anemic options flow suggest the market hasn't caught on yet, making this a patience play rather than an imminent breakout. The setup is speculative: if insider accumulation precedes a nickel/cobalt story or company announcement, this could rerate, but the current 27-point composite score reflects reality \u2014 there's no visible catalyst to trigger movement in the next 30 days. This is a bet on insider knowledge, not technicals or momentum.",
+      "top_signal": "Heavy insider accumulation over 14 days signals conviction, but without an announced catalyst or retail interest, it's a quiet accumulation play that could take weeks or months to resolve.",
+      "risk": "No identified catalysts, zero retail momentum, and minimal options activity mean this stock could remain dead money indefinitely, or insiders could be wrong about timing \u2014 patience could extend from weeks to quarters.",
+      "sentiment": "speculative"
+    },
+    {
+      "ticker": "PAYS",
+      "company_name": "Paysign, Inc.",
+      "price": 6.72,
+      "sector": "Technology",
+      "total_score": 26.6,
+      "signal_breakdown": {
+        "insider": 90,
+        "reddit": 0,
+        "options": 5,
+        "catalyst": 0,
+        "squeeze": 20
+      },
+      "position_size": 7.5,
+      "stop_loss": 5.51,
+      "price_target": 10.08,
+      "reddit_mentions": 0,
+      "reddit_velocity": 0.0,
+      "catalysts": [],
+      "headlines": [],
+      "rationale": "Insider buying at 90/100 is the lone bright spot here\u2014insiders accumulating at $6.72 suggests confidence in near-term value, though it could simply reflect a founder topping up. With zero near-term catalysts, zero Reddit buzz, and minimal options activity, there's no immediate spark to drive a breakout; this is a patient accumulation play at best. The 26.6 composite score reflects the reality that a single bullish signal in a vacuum of catalysts and momentum is speculative at best, and the stock could drift sideways or lower without concrete news.",
+      "top_signal": "Insider buying activity at 90/100 over the last 14 days suggests management believes the stock is undervalued at current levels.",
+      "risk": "Complete absence of identified catalysts, analyst coverage, or retail interest means this stock could stagnate for months or deteriorate on any micro-cap dilution or operational stumble.",
+      "sentiment": "speculative"
+    }
+  ],
+  "weekly_summary": "# This Week's Small-Cap Picks\n\nWe're tracking five names with catalysts ahead: UP, VITL, ASPN, GSIT, and WNC spanning technology, consumer defensive, and industrials. Each holds structural tailwinds we believe justify closer attention over the coming weeks.",
+  "metadata": {
+    "stocks_screened": 200,
+    "stocks_scored": 20,
+    "picks_generated": 5
+  }
+}
