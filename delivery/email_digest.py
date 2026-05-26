@@ -200,8 +200,16 @@ EMAIL_TEMPLATE = """
 <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:16px 18px; margin-bottom:20px;">
   <h3 style="margin:0 0 14px; color:#15803d; font-size:15px;">💼 This Week's Core Buy — Set It & Forget It</h3>
   <p style="font-size:12px; color:#166534; margin:0 0 14px;">
-    These aren't picks — they're your long-term foundation. Buy these every week no matter what the market is doing.
+    These aren't picks — they're your long-term foundation. Your $100 biweekly direct deposit into your Fidelity Roth IRA 
+    is already set up. All growth is <strong>100% tax-free</strong> at retirement. Don't touch it.
   </p>
+  {% if core.roth_pct_of_limit %}
+  <div style="background:#dcfce7; border-radius:4px; padding:6px 12px; margin-bottom:12px; font-size:12px; color:#15803d;">
+    📊 Roth IRA Progress: ${{ core.roth_annual_contribution }}/year = 
+    <strong>{{ core.roth_pct_of_limit }}% of your $7,000 annual limit</strong> 
+    · ${{ core.roth_remaining_limit }} still available to contribute this year
+  </div>
+  {% endif %}
 
   {% for h in core.active_holdings %}
   <div style="background:white; border-radius:6px; padding:12px 14px; margin-bottom:10px; border:1px solid #bbf7d0;">

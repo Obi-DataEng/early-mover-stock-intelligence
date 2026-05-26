@@ -14,23 +14,32 @@ from config import DB_PATH
 
 logger = logging.getLogger(__name__)
 
-# Your core ETF targets — edit these to match your goals
+# Your core ETF targets
+# Roth IRA at Fidelity — $100 every biweekly paycheck
+# ~$2,600/year toward the $7,000 annual Roth IRA limit
 CORE_HOLDINGS = [
     {
-        "ticker": "VOO",
-        "name": "Vanguard S&P 500 ETF",
-        "weekly_amount": 40.0,
-        "description": "Tracks the S&P 500 — 500 biggest US companies. The foundation of any long-term portfolio.",
-        "why": "Historically returns ~10% per year over any 20-year period. Warren Buffett recommends this for most people.",
+        "ticker": "FZROX",
+        "name": "Fidelity ZERO Total Market Index Fund",
+        "weekly_amount": 50.0,   # ~$100 biweekly = $50/week equivalent
+        "account": "Roth IRA (Fidelity)",
+        "description": "Fidelity's zero-fee total US market fund. Covers 2,700+ companies including small, mid and large caps.",
+        "why": "0% expense ratio — literally free to hold. All growth is 100% tax-free in your Roth IRA. Best long-term vehicle available to you.",
     },
     {
         "ticker": "SCHD",
         "name": "Schwab US Dividend Equity ETF",
-        "weekly_amount": 0.0,   # Set to >0 when ready to add dividends
+        "weekly_amount": 0.0,   # Add later when Roth maxed or want dividends
+        "account": "Roth IRA (Fidelity)",
         "description": "High-quality dividend-paying US stocks. Currently yields ~3.5% annually.",
-        "why": "Dividends that get reinvested compound powerfully over 20-30 years.",
+        "why": "Add this when you want dividend income. Dividends inside a Roth IRA are completely tax-free.",
     },
 ]
+
+# Contribution tracking
+ROTH_IRA_ANNUAL_LIMIT = 7000.0
+ROTH_IRA_CONTRIBUTION_FREQUENCY = "biweekly"
+ROTH_IRA_CONTRIBUTION_AMOUNT = 100.0  # per paycheck
 
 
 def init_core_table():
@@ -198,12 +207,18 @@ def get_weekly_core_reminder() -> dict:
     total_core_value = sum(h["current_value"] for h in holdings)
     total_core_invested = sum(h["total_invested"] for h in holdings)
 
-    # 30-year projection for VOO contribution
+    # 30-year projection — $100 biweekly = $2,600/year
+    primary = active[0] if active else None
+    weekly_equiv = primary["weekly_amount"] if primary else 50.0
     voo_projection = get_portfolio_projection(
-        weekly_amount=next((h["weekly_amount"] for h in active if h["ticker"] == "VOO"), 40),
+        weekly_amount=weekly_equiv,
         annual_return=0.10,
         years=30,
     )
+
+    # Also show how close to annual Roth limit
+    annual_pace = ROTH_IRA_CONTRIBUTION_AMOUNT * 26  # 26 biweekly paychecks
+    pct_of_limit = round(annual_pace / ROTH_IRA_ANNUAL_LIMIT * 100, 1)
 
     return {
         "holdings": holdings,
@@ -213,6 +228,10 @@ def get_weekly_core_reminder() -> dict:
         "total_core_invested": round(total_core_invested, 2),
         "total_gain_loss": round(total_core_value - total_core_invested, 2),
         "projection_30yr": voo_projection,
+        "roth_annual_contribution": ROTH_IRA_CONTRIBUTION_AMOUNT * 26,
+        "roth_limit": ROTH_IRA_ANNUAL_LIMIT,
+        "roth_pct_of_limit": round((ROTH_IRA_CONTRIBUTION_AMOUNT * 26) / ROTH_IRA_ANNUAL_LIMIT * 100, 1),
+        "roth_remaining_limit": round(ROTH_IRA_ANNUAL_LIMIT - (ROTH_IRA_CONTRIBUTION_AMOUNT * 26), 2),
     }
 
 
