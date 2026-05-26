@@ -65,9 +65,10 @@ def init_db():
             price_target REAL,
             stop_loss REAL,
             position_size REAL,
+            shares REAL,
             pnl_dollar REAL,
             pnl_pct REAL,
-            status TEXT DEFAULT 'open',  -- open | hit_target | hit_stop | closed
+            status TEXT DEFAULT 'open',
             updated_at TEXT DEFAULT CURRENT_TIMESTAMP
         );
 
@@ -149,6 +150,18 @@ def run_pipeline(dry_run: bool = False):
     filtered_universe = list(stock_info_map.keys())
     logger.info(f"After price filter: {len(filtered_universe)} stocks remain")
 
+    if len(filtered_universe) == 0:
+        logger.warning("No stocks passed price filter — Finviz likely rate limited. Using fallback universe.")
+        from scrapers.finviz_screen import get_fallback_universe
+        from scrapers.price_data import get_stock_info, meets_screen_criteria
+        fallback = get_fallback_universe()
+        for ticker in fallback:
+            info = get_stock_info(ticker)
+            if info and meets_screen_criteria(info):
+                stock_info_map[ticker] = info
+        filtered_universe = list(stock_info_map.keys())
+        logger.info(f"Fallback universe: {len(filtered_universe)} stocks")
+
     # ── Step 3: Social Signals (StockTwits + Twitter + Yahoo) ───────────────
     logger.info("Step 3/6: Scraping social signals (StockTwits, Twitter, Yahoo)...")
     from scrapers.stocktwits_scraper import get_social_scores as get_st_scores
@@ -224,12 +237,24 @@ def run_pipeline(dry_run: bool = False):
 
     logger.info(f"Top picks: {[s.ticker for s in top_picks_raw]}")
 
+    # ── Update existing position prices first ────────────────────────────────
+    logger.info("Updating existing position prices...")
+    from scrapers.performance_tracker import update_current_prices, get_weekly_report
+    update_current_prices()
+    weekly_report = get_weekly_report()
+    if weekly_report:
+        logger.info(f"\n{weekly_report}")
+
     # ── Haiku Analysis ────────────────────────────────────────────────────────
     logger.info("Running Claude Haiku analysis...")
     from ai.haiku_analyst import analyze_all_picks, generate_weekly_summary
     picks = analyze_all_picks(top_picks_raw)
     watchlist = analyze_all_picks(watchlist_raw)
     weekly_summary = generate_weekly_summary(picks)
+
+    # ── Record picks for performance tracking ────────────────────────────────
+    from scrapers.performance_tracker import record_new_picks
+    record_new_picks(picks, run_date)
 
     # ── Save to DB ────────────────────────────────────────────────────────────
     save_picks_to_db(picks, run_date)
@@ -255,7 +280,9 @@ def run_pipeline(dry_run: bool = False):
     if not dry_run:
         logger.info("Sending email digest...")
         from delivery.email_digest import deliver
-        sent = deliver(picks, weekly_summary, watchlist)
+        from scrapers.performance_tracker import get_performance_summary
+        perf_summary = get_performance_summary()
+        sent = deliver(picks, weekly_summary, watchlist, perf_summary)
         logger.info(f"Email sent: {sent}")
     else:
         logger.info("Dry run — skipping email delivery")

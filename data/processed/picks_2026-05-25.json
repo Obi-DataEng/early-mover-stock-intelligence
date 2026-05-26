@@ -15,7 +15,7 @@
         "catalyst": 80,
         "squeeze": 54
       },
-      "position_size": 16.35,
+      "position_size": 17.06,
       "stop_loss": 7.47,
       "price_target": 13.66,
       "reddit_mentions": 0,
@@ -40,73 +40,15 @@
           "source": "SEC EDGAR 8-K"
         }
       ],
-      "headlines": [
-        {
-          "ticker": "UP",
-          "title": "Wheels Up Achieves Record Operational Milestone of Zero Cancellation Days",
-          "description": "74 zero cancellation days year to date in 2026 exceeds 2025 annual count Continued performance highlights ongoing improvements in operations ATLANTA, May 22, 2026 /PRNewswire/ -- Wheels Up Experience Inc. (NYSE: UP), a leading provider of on-demand private av\u2026",
-          "source": "PRNewswire",
-          "url": "https://www.prnewswire.com/news-releases/wheels-up-achieves-record-operational-milestone-of-zero-cancellation-days-302779675.html",
-          "published_at": "2026-05-22T11:00:00Z"
-        }
-      ],
-      "verdict": "WATCH",
-      "simple_explanation": "The company insiders are putting their own money into this stock, which is usually a good sign they think it's going up \u2014 and they just hit a big operational win with zero cancellations. But at a 55/100 confidence score, this isn't a slam dunk yet. Worth monitoring, but wait for clearer proof before you commit your $10\u2013$20.",
-      "upside_reason": "If that SEC filing from 25 days ago contains good news about profits or growth, insiders who bought cheap could see a quick pop, especially if short sellers get squeezed.",
-      "downside_reason": "This is a small-cap airline service company \u2014 expensive to run, easy to get hurt by fuel costs or a recession, and almost nobody's talking about it yet, which means it could quietly stay flat or drop when money gets tight.",
-      "sentiment": "speculative",
-      "rationale": "The company insiders are putting their own money into this stock, which is usually a good sign they think it's going up \u2014 and they just hit a big operational win with zero cancellations. But at a 55/100 confidence score, this isn't a slam dunk yet. Worth monitoring, but wait for clearer proof before you commit your $10\u2013$20.",
-      "top_signal": "If that SEC filing from 25 days ago contains good news about profits or growth, insiders who bought cheap could see a quick pop, especially if short sellers get squeezed.",
-      "risk": "This is a small-cap airline service company \u2014 expensive to run, easy to get hurt by fuel costs or a recession, and almost nobody's talking about it yet, which means it could quietly stay flat or drop when money gets tight."
-    },
-    {
-      "ticker": "GSIT",
-      "company_name": "GSI Technology, Inc.",
-      "price": 9.66,
-      "sector": "Technology",
-      "industry": "Semiconductors",
-      "total_score": 54.7,
-      "signal_breakdown": {
-        "insider": 100,
-        "reddit": 7,
-        "options": 31,
-        "catalyst": 90,
-        "squeeze": 27
-      },
-      "position_size": 16.26,
-      "stop_loss": 7.92,
-      "price_target": 14.49,
-      "reddit_mentions": 0,
-      "reddit_velocity": 0.067,
-      "catalysts": [
-        {
-          "type": "8-K Filing",
-          "date": "2026-05-07",
-          "days_until": -18,
-          "days_ago": 18,
-          "entity": "GSIT",
-          "urgency": "MEDIUM",
-          "source": "SEC EDGAR 8-K"
-        },
-        {
-          "type": "8-K Filing",
-          "date": "2026-05-22",
-          "days_until": -3,
-          "days_ago": 3,
-          "entity": "GSIT",
-          "urgency": "HIGH",
-          "source": "SEC EDGAR 8-K"
-        }
-      ],
       "headlines": [],
       "verdict": "WATCH",
-      "simple_explanation": "The people running this company are putting their own money into the stock, which is a real positive signal that they believe in what's coming. But the confidence score is only moderate, and there's basically no buzz or recent news, so this feels like a good one to keep your eye on rather than jump in immediately.",
-      "upside_reason": "That SEC filing from 18 days ago could contain big news about a new product, partnership, or revenue deal that sends the stock climbing once it goes public.",
-      "downside_reason": "It's a small semiconductor company with almost no one talking about it, which means it could stay flat for months or even tank if the SEC filing turns out to be routine or disappointing.",
-      "sentiment": "cautiously_bullish",
-      "rationale": "The people running this company are putting their own money into the stock, which is a real positive signal that they believe in what's coming. But the confidence score is only moderate, and there's basically no buzz or recent news, so this feels like a good one to keep your eye on rather than jump in immediately.",
-      "top_signal": "That SEC filing from 18 days ago could contain big news about a new product, partnership, or revenue deal that sends the stock climbing once it goes public.",
-      "risk": "It's a small semiconductor company with almost no one talking about it, which means it could stay flat for months or even tank if the SEC filing turns out to be routine or disappointing."
+      "simple_explanation": "The company's leadership is putting their own money into this stock, which is usually a good sign they think it's going up. But there's no recent news, barely anyone's talking about it online, and we don't know what that SEC filing actually says yet. It's worth keeping an eye on, but not ready to buy just yet.",
+      "upside_reason": "If that SEC filing contains good news about growth or profits, the insider buying could trigger a real rally since so few people know about this stock yet.",
+      "downside_reason": "This is a small-cap stock with almost no attention and no recent news \u2014 it could just sit flat or drop if the SEC filing disappoints or the company reports bad earnings.",
+      "sentiment": "speculative",
+      "rationale": "The company's leadership is putting their own money into this stock, which is usually a good sign they think it's going up. But there's no recent news, barely anyone's talking about it online, and we don't know what that SEC filing actually says yet. It's worth keeping an eye on, but not ready to buy just yet.",
+      "top_signal": "If that SEC filing contains good news about growth or profits, the insider buying could trigger a real rally since so few people know about this stock yet.",
+      "risk": "This is a small-cap stock with almost no attention and no recent news \u2014 it could just sit flat or drop if the SEC filing disappoints or the company reports bad earnings."
     },
     {
       "ticker": "ASPN",
@@ -122,7 +64,7 @@
         "catalyst": 77,
         "squeeze": 28
       },
-      "position_size": 15.58,
+      "position_size": 16.25,
       "stop_loss": 4.75,
       "price_target": 8.69,
       "reddit_mentions": 0,
@@ -149,13 +91,13 @@
       ],
       "headlines": [],
       "verdict": "WATCH",
-      "simple_explanation": "The company's top executives are putting their own money into this stock, which is usually a good sign they think it's undervalued. But the confidence score is just above 50/50, and there's no recent news backing up the hype \u2014 so this feels more like a lottery ticket than a solid play right now.",
-      "upside_reason": "If that SEC filing they just submitted reveals a big new contract or product, insider buying could look like a smart move and the stock could jump 30\u201350% fast.",
-      "downside_reason": "Insiders can be wrong too \u2014 if the SEC filing is boring or the company misses earnings, this stock could easily drop back to $4 or lower, especially since it's already a small, quiet company.",
-      "sentiment": "speculative",
-      "rationale": "The company's top executives are putting their own money into this stock, which is usually a good sign they think it's undervalued. But the confidence score is just above 50/50, and there's no recent news backing up the hype \u2014 so this feels more like a lottery ticket than a solid play right now.",
-      "top_signal": "If that SEC filing they just submitted reveals a big new contract or product, insider buying could look like a smart move and the stock could jump 30\u201350% fast.",
-      "risk": "Insiders can be wrong too \u2014 if the SEC filing is boring or the company misses earnings, this stock could easily drop back to $4 or lower, especially since it's already a small, quiet company."
+      "simple_explanation": "The company's own leaders are putting their personal money into ASPN stock, which is a real bullish signal that they believe in what's coming. However, the confidence score is only 52/100 \u2014 basically a coin flip \u2014 and there's no news or buzz yet, so this isn't ready for your weekly budget just yet. Wait to see what that SEC filing reveals before you jump in.",
+      "upside_reason": "That recent SEC filing could contain news about a major new contract or partnership that makes this insulation tech more valuable to industrial customers.",
+      "downside_reason": "The company is still pretty small and unknown, so if that SEC filing disappoints or the market just ignores the insider buying, the stock could drift sideways or drop.",
+      "sentiment": "cautiously_bullish",
+      "rationale": "The company's own leaders are putting their personal money into ASPN stock, which is a real bullish signal that they believe in what's coming. However, the confidence score is only 52/100 \u2014 basically a coin flip \u2014 and there's no news or buzz yet, so this isn't ready for your weekly budget just yet. Wait to see what that SEC filing reveals before you jump in.",
+      "top_signal": "That recent SEC filing could contain news about a major new contract or partnership that makes this insulation tech more valuable to industrial customers.",
+      "risk": "The company is still pretty small and unknown, so if that SEC filing disappoints or the market just ignores the insider buying, the stock could drift sideways or drop."
     },
     {
       "ticker": "VITL",
@@ -171,7 +113,7 @@
         "catalyst": 40,
         "squeeze": 73
       },
-      "position_size": 13.44,
+      "position_size": 14.02,
       "stop_loss": 8.31,
       "price_target": 15.2,
       "reddit_mentions": 0,
@@ -196,40 +138,15 @@
           "source": "SEC EDGAR 8-K"
         }
       ],
-      "headlines": [
-        {
-          "ticker": "VITL",
-          "title": "INVESTOR ALERT: Pomerantz Law Firm Reminds Investors with Losses on their Investment in Vital Farms, Inc. Of Class Action Lawsuit and Upcoming Deadlines - VITL",
-          "description": "NEW YORK, May 21, 2026 /PRNewswire/ -- Pomerantz LLP announces that a class action lawsuit has been filed against Vital Farms, Inc. (\"Vital Farms\" or the \"Company\") (NASDAQ: VITL). Such investors are advised to contact Danielle Peyton at newaction@pomlaw.com \u2026",
-          "source": "PRNewswire",
-          "url": "https://www.prnewswire.com/news-releases/investor-alert-pomerantz-law-firm-reminds-investors-with-losses-on-their-investment-in-vital-farms-inc-of-class-action-lawsuit-and-upcoming-deadlines--vitl-302779297.html",
-          "published_at": "2026-05-21T19:10:00Z"
-        },
-        {
-          "ticker": "VITL",
-          "title": "Robbins LLP Encourages VITL Investors to Contact the Firm for Information About the Pending Class Action Against Vital Farms, Inc.",
-          "description": "SAN DIEGO, May 20, 2026 /PRNewswire/ -- Robbins LLP is Investigating Allegations that Vital Farms, Inc. (VITL) Misled Investors Regarding its Business Prospects. For more information, submit a form, email attorney Aaron Dumas, Jr., or give us a call at (800) \u2026",
-          "source": "PRNewswire",
-          "url": "https://www.prnewswire.com/news-releases/robbins-llp-encourages-vitl-investors-to-contact-the-firm-for-information-about-the-pending-class-action-against-vital-farms-inc-302778171.html",
-          "published_at": "2026-05-20T22:29:00Z"
-        },
-        {
-          "ticker": "VITL",
-          "title": "VITL Deadline: VITL Investors with Losses in Excess of $100K Have Opportunity to Lead Vital Farms, Inc. Securities Fraud Lawsuit Filed by The Rosen Law Firm",
-          "description": "NEW YORK, May 18, 2026 /PRNewswire/ -- Why: Rosen Law Firm, a global investor rights law firm, reminds purchasers of securities of Vital Farms, Inc. (NASDAQ: VITL) between May 8, 2025 and February 26, 2026, both dates inclusive (the \"Class Period\"), of the im\u2026",
-          "source": "PRNewswire",
-          "url": "https://www.prnewswire.com/news-releases/vitl-deadline-vitl-investors-with-losses-in-excess-of-100k-have-opportunity-to-lead-vital-farms-inc-securities-fraud-lawsuit-filed-by-the-rosen-law-firm-302775129.html",
-          "published_at": "2026-05-18T19:41:00Z"
-        }
-      ],
-      "verdict": "PASS",
-      "simple_explanation": "Insider buying and short squeeze setup sound good, but there's a massive red flag: the company is in the middle of multiple securities fraud lawsuits that could tank the stock or tie it up in court for years. The recent SEC filing might be related to these legal problems, not good news. This is too risky for a beginner with a small budget.",
-      "upside_reason": "If the company wins the lawsuits and proves the fraud claims are bogus, insiders buying combined with short sellers covering could spike the stock hard.",
-      "downside_reason": "The securities fraud lawsuits could result in huge fines, settlements, or management changes that hurt the stock price badly \u2014 and the stock could get stuck in legal limbo for a long time.",
+      "headlines": [],
+      "verdict": "WATCH",
+      "simple_explanation": "The company insiders are putting their own money into this stock, which is usually a good sign they think it's headed up. But the confidence score is pretty low (45%), which means the signals are mixed and it's not a slam dunk yet. Wait for the SEC filing details or more clarity before you commit your $10\u2013$20.",
+      "upside_reason": "Those SEC filing details come out and show the company is growing sales or expanding into new markets \u2014 that would give insiders' confidence real proof.",
+      "downside_reason": "The SEC filing could reveal disappointing earnings, slowing growth, or margin problems, which would crush the insider-buying optimism fast.",
       "sentiment": "speculative",
-      "rationale": "Insider buying and short squeeze setup sound good, but there's a massive red flag: the company is in the middle of multiple securities fraud lawsuits that could tank the stock or tie it up in court for years. The recent SEC filing might be related to these legal problems, not good news. This is too risky for a beginner with a small budget.",
-      "top_signal": "If the company wins the lawsuits and proves the fraud claims are bogus, insiders buying combined with short sellers covering could spike the stock hard.",
-      "risk": "The securities fraud lawsuits could result in huge fines, settlements, or management changes that hurt the stock price badly \u2014 and the stock could get stuck in legal limbo for a long time."
+      "rationale": "The company insiders are putting their own money into this stock, which is usually a good sign they think it's headed up. But the confidence score is pretty low (45%), which means the signals are mixed and it's not a slam dunk yet. Wait for the SEC filing details or more clarity before you commit your $10\u2013$20.",
+      "top_signal": "Those SEC filing details come out and show the company is growing sales or expanding into new markets \u2014 that would give insiders' confidence real proof.",
+      "risk": "The SEC filing could reveal disappointing earnings, slowing growth, or margin problems, which would crush the insider-buying optimism fast."
     },
     {
       "ticker": "WNC",
@@ -245,7 +162,7 @@
         "catalyst": 63,
         "squeeze": 34
       },
-      "position_size": 13.38,
+      "position_size": 13.96,
       "stop_loss": 6.37,
       "price_target": 11.65,
       "reddit_mentions": 0,
@@ -272,16 +189,14 @@
       ],
       "headlines": [],
       "verdict": "WATCH",
-      "simple_explanation": "The company's top executives are buying their own stock with real money \u2014 that's usually a good sign they see something coming. But the overall confidence score is only 45%, meaning there's real uncertainty here. This is worth monitoring, not rushing into yet.",
-      "upside_reason": "That SEC filing from 24 days ago could contain good news about new contracts or earnings that hasn't been announced yet, which could cause a quick price jump.",
-      "downside_reason": "Nobody's talking about this stock, there's no recent news to confirm the insider optimism, and heavy equipment companies are sensitive to economic slowdowns \u2014 bad economic news could sink it fast.",
+      "simple_explanation": "The people running this company are putting their own money into the stock, which is a good sign they think it's headed up. But with a confidence score of only 45 and no recent news backing it up, it's too early to commit real money. Wait and see what that SEC filing reveals first.",
+      "upside_reason": "If the SEC filing they submitted 24 days ago contains positive news about orders or earnings, insiders' confidence could prove right and the stock could jump quickly.",
+      "downside_reason": "The company makes heavy machinery for farms and construction, which gets hit hard if the economy slows down, and with almost no buzz about the stock, there's no momentum to carry it higher.",
       "sentiment": "speculative",
-      "rationale": "The company's top executives are buying their own stock with real money \u2014 that's usually a good sign they see something coming. But the overall confidence score is only 45%, meaning there's real uncertainty here. This is worth monitoring, not rushing into yet.",
-      "top_signal": "That SEC filing from 24 days ago could contain good news about new contracts or earnings that hasn't been announced yet, which could cause a quick price jump.",
-      "risk": "Nobody's talking about this stock, there's no recent news to confirm the insider optimism, and heavy equipment companies are sensitive to economic slowdowns \u2014 bad economic news could sink it fast."
-    }
-  ],
-  "watchlist": [
+      "rationale": "The people running this company are putting their own money into the stock, which is a good sign they think it's headed up. But with a confidence score of only 45 and no recent news backing it up, it's too early to commit real money. Wait and see what that SEC filing reveals first.",
+      "top_signal": "If the SEC filing they submitted 24 days ago contains positive news about orders or earnings, insiders' confidence could prove right and the stock could jump quickly.",
+      "risk": "The company makes heavy machinery for farms and construction, which gets hit hard if the economy slows down, and with almost no buzz about the stock, there's no momentum to carry it higher."
+    },
     {
       "ticker": "ATOM",
       "company_name": "Atomera Incorporated",
@@ -296,7 +211,7 @@
         "catalyst": 63,
         "squeeze": 32
       },
-      "position_size": 17.17,
+      "position_size": 13.71,
       "stop_loss": 7.58,
       "price_target": 13.86,
       "reddit_mentions": 0,
@@ -323,14 +238,16 @@
       ],
       "headlines": [],
       "verdict": "WATCH",
-      "simple_explanation": "The people running this company are buying their own stock with real money, which is a good sign they think it's undervalued \u2014 but the confidence score is low and there's almost no buzz about it yet. That SEC filing could be important news, so it's worth watching for the next couple weeks before you decide to jump in.",
-      "upside_reason": "The SEC filing they just submitted could contain good news about a new product or partnership that makes their semiconductor equipment more valuable.",
-      "downside_reason": "This is a tiny, unknown company in a competitive industry \u2014 the SEC filing could also be boring or negative, and with low trading volume, your money could get stuck if you need to sell quickly.",
+      "simple_explanation": "The company's own leaders are putting their personal money into this stock, which is usually a good sign they think it's going up. But the confidence score is pretty low (44.2/100) and nobody's talking about it yet, so this isn't a slam dunk. Wait to see what that SEC filing reveals before you put your $10\u2013$20 in.",
+      "upside_reason": "If the SEC filing contains good news about a new product or partnership, insiders could be proven right and the stock could jump quickly.",
+      "downside_reason": "The SEC filing could disappoint, or the company might just be struggling and insiders are betting on a turnaround that doesn't happen \u2014 semiconductor equipment is super competitive.",
       "sentiment": "speculative",
-      "rationale": "The people running this company are buying their own stock with real money, which is a good sign they think it's undervalued \u2014 but the confidence score is low and there's almost no buzz about it yet. That SEC filing could be important news, so it's worth watching for the next couple weeks before you decide to jump in.",
-      "top_signal": "The SEC filing they just submitted could contain good news about a new product or partnership that makes their semiconductor equipment more valuable.",
-      "risk": "This is a tiny, unknown company in a competitive industry \u2014 the SEC filing could also be boring or negative, and with low trading volume, your money could get stuck if you need to sell quickly."
-    },
+      "rationale": "The company's own leaders are putting their personal money into this stock, which is usually a good sign they think it's going up. But the confidence score is pretty low (44.2/100) and nobody's talking about it yet, so this isn't a slam dunk. Wait to see what that SEC filing reveals before you put your $10\u2013$20 in.",
+      "top_signal": "If the SEC filing contains good news about a new product or partnership, insiders could be proven right and the stock could jump quickly.",
+      "risk": "The SEC filing could disappoint, or the company might just be struggling and insiders are betting on a turnaround that doesn't happen \u2014 semiconductor equipment is super competitive."
+    }
+  ],
+  "watchlist": [
     {
       "ticker": "VUZI",
       "company_name": "Vuzix Corporation",
@@ -345,7 +262,7 @@
         "catalyst": 67,
         "squeeze": 49
       },
-      "position_size": 15.38,
+      "position_size": 16.43,
       "stop_loss": 4.21,
       "price_target": 7.71,
       "reddit_mentions": 0,
@@ -370,24 +287,15 @@
           "source": "SEC EDGAR 8-K"
         }
       ],
-      "headlines": [
-        {
-          "ticker": "VUZI",
-          "title": "Vuzix Showcasing Advanced Waveguide Solutions for Defense and Tactical Operations During SOF Week 2026",
-          "description": "ROCHESTER, N.Y., May 19, 2026 /PRNewswire/ -- Vuzix\u00ae Corporation (NASDAQ: VUZI), (\"Vuzix\" or, the \"Company\"), a leading supplier of AI-powered smart glasses, waveguides and Augmented Reality (AR) technologies, will be exhibiting its advanced waveguide solutio\u2026",
-          "source": "PRNewswire",
-          "url": "https://www.prnewswire.com/news-releases/vuzix-showcasing-advanced-waveguide-solutions-for-defense-and-tactical-operations-during-sof-week-2026-302776587.html",
-          "published_at": "2026-05-19T17:45:00Z"
-        }
-      ],
+      "headlines": [],
       "verdict": "WATCH",
-      "simple_explanation": "The company's own leaders are quietly buying stock and they just filed something with the SEC that might be important \u2014 those are green flags. But almost nobody is talking about this, the confidence score is pretty low (40%), and it's a small company making niche tech, so it's risky. Worth keeping an eye on, but not ready to bet $10\u2013$20 yet.",
-      "upside_reason": "If the recent SEC filing contains a big defense contract or partnership announcement, the stock could jump fast since so few people know about it.",
-      "downside_reason": "The company makes specialized AR glasses in a crowded market with limited mainstream demand, and if the SEC news is boring or negative, the price could sink back down.",
+      "simple_explanation": "Insiders are quietly buying their own stock, which is a good sign they think it's undervalued \u2014 but almost nobody else is paying attention yet. The SEC filing they just made could contain good news, but right now it's a mystery. This is too risky to jump in on $10\u2013$20, but it's worth keeping an eye on.",
+      "upside_reason": "That SEC filing comes out or the company announces something big, combined with short sellers panic-buying to cover their bets, could cause a quick spike in price.",
+      "downside_reason": "The SEC filing could be boring or bad news, and if insiders stop buying, the stock could fade back down to $3\u2013$4 since nobody is really interested in it yet.",
       "sentiment": "speculative",
-      "rationale": "The company's own leaders are quietly buying stock and they just filed something with the SEC that might be important \u2014 those are green flags. But almost nobody is talking about this, the confidence score is pretty low (40%), and it's a small company making niche tech, so it's risky. Worth keeping an eye on, but not ready to bet $10\u2013$20 yet.",
-      "top_signal": "If the recent SEC filing contains a big defense contract or partnership announcement, the stock could jump fast since so few people know about it.",
-      "risk": "The company makes specialized AR glasses in a crowded market with limited mainstream demand, and if the SEC news is boring or negative, the price could sink back down."
+      "rationale": "Insiders are quietly buying their own stock, which is a good sign they think it's undervalued \u2014 but almost nobody else is paying attention yet. The SEC filing they just made could contain good news, but right now it's a mystery. This is too risky to jump in on $10\u2013$20, but it's worth keeping an eye on.",
+      "top_signal": "That SEC filing comes out or the company announces something big, combined with short sellers panic-buying to cover their bets, could cause a quick spike in price.",
+      "risk": "The SEC filing could be boring or bad news, and if insiders stop buying, the stock could fade back down to $3\u2013$4 since nobody is really interested in it yet."
     },
     {
       "ticker": "PAYS",
@@ -403,7 +311,7 @@
         "catalyst": 57,
         "squeeze": 20
       },
-      "position_size": 15.26,
+      "position_size": 16.3,
       "stop_loss": 5.51,
       "price_target": 10.08,
       "reddit_mentions": 0,
@@ -430,13 +338,13 @@
       ],
       "headlines": [],
       "verdict": "WATCH",
-      "simple_explanation": "The insiders buying their own stock is a good sign \u2014 they think it's cheap. But the overall confidence score is pretty low at 39%, and nobody's talking about this company online yet, which means it's super risky and could easily disappear from your radar. Hold off until there's more clarity on that SEC filing.",
-      "upside_reason": "That SEC filing from 26 days ago could contain a surprise announcement \u2014 like a partnership, new product, or better earnings \u2014 that wakes up the market and sends the stock higher.",
-      "downside_reason": "This is a tiny company that almost nobody knows about, so if the SEC filing is boring or bad news, the stock could drop just as fast with almost no one there to buy it.",
+      "simple_explanation": "The insiders buying their own stock is a good sign \u2014 they believe in the company. But the overall confidence score is pretty low (39/100), and almost nobody is talking about this stock, which means it's either a hidden gem or a reason to be cautious. Wait for the SEC filing news to become clearer before you spend your $10\u2013$20.",
+      "upside_reason": "That SEC filing from 26 days ago could contain a big announcement (new product, partnership, or earnings beat) that makes the stock jump 20\u201330% in days.",
+      "downside_reason": "With such a low confidence score and no news or buzz, this could just quietly drop if the SEC filing disappoints or if the company misses expectations.",
       "sentiment": "speculative",
-      "rationale": "The insiders buying their own stock is a good sign \u2014 they think it's cheap. But the overall confidence score is pretty low at 39%, and nobody's talking about this company online yet, which means it's super risky and could easily disappear from your radar. Hold off until there's more clarity on that SEC filing.",
-      "top_signal": "That SEC filing from 26 days ago could contain a surprise announcement \u2014 like a partnership, new product, or better earnings \u2014 that wakes up the market and sends the stock higher.",
-      "risk": "This is a tiny company that almost nobody knows about, so if the SEC filing is boring or bad news, the stock could drop just as fast with almost no one there to buy it."
+      "rationale": "The insiders buying their own stock is a good sign \u2014 they believe in the company. But the overall confidence score is pretty low (39/100), and almost nobody is talking about this stock, which means it's either a hidden gem or a reason to be cautious. Wait for the SEC filing news to become clearer before you spend your $10\u2013$20.",
+      "top_signal": "That SEC filing from 26 days ago could contain a big announcement (new product, partnership, or earnings beat) that makes the stock jump 20\u201330% in days.",
+      "risk": "With such a low confidence score and no news or buzz, this could just quietly drop if the SEC filing disappoints or if the company misses expectations."
     },
     {
       "ticker": "OSS",
@@ -452,7 +360,7 @@
         "catalyst": 80,
         "squeeze": 24
       },
-      "position_size": 13.83,
+      "position_size": 14.77,
       "stop_loss": 14.62,
       "price_target": 26.74,
       "reddit_mentions": 0,
@@ -479,13 +387,13 @@
       ],
       "headlines": [],
       "verdict": "WATCH",
-      "simple_explanation": "The people running this company are quietly buying their own stock, which is usually a good sign they think it's cheap right now. But almost nobody's talking about it online, and we don't know what's in that SEC filing yet \u2014 so there's a lot of unknown stuff here. It's worth keeping an eye on, but not ready to bet real money on it.",
-      "upside_reason": "That SEC filing from 17 days ago could contain news about a big contract or product launch that gets investors excited and pushes the stock price up.",
-      "downside_reason": "If the SEC filing turns out to be boring news or if the company reports disappointing earnings, this stock could drop fast since not many people are watching it to catch problems early.",
+      "simple_explanation": "There are some green lights here \u2014 insiders are buying their own stock, which usually means they think good things are coming, and there's a recent SEC filing that could contain real news. But almost nobody is talking about this company, the confidence score is pretty low, and we don't know what that SEC filing actually says yet. It's worth keeping an eye on, but don't pull the trigger until you see what the filing reveals.",
+      "upside_reason": "The SEC filing from 17 days ago could announce a big contract, partnership, or product launch that makes the stock jump.",
+      "downside_reason": "This is a tiny, under-the-radar company with almost no buzz \u2014 that usually means it stays quiet and flat, or the SEC filing could be boring news that disappoints.",
       "sentiment": "speculative",
-      "rationale": "The people running this company are quietly buying their own stock, which is usually a good sign they think it's cheap right now. But almost nobody's talking about it online, and we don't know what's in that SEC filing yet \u2014 so there's a lot of unknown stuff here. It's worth keeping an eye on, but not ready to bet real money on it.",
-      "top_signal": "That SEC filing from 17 days ago could contain news about a big contract or product launch that gets investors excited and pushes the stock price up.",
-      "risk": "If the SEC filing turns out to be boring news or if the company reports disappointing earnings, this stock could drop fast since not many people are watching it to catch problems early."
+      "rationale": "There are some green lights here \u2014 insiders are buying their own stock, which usually means they think good things are coming, and there's a recent SEC filing that could contain real news. But almost nobody is talking about this company, the confidence score is pretty low, and we don't know what that SEC filing actually says yet. It's worth keeping an eye on, but don't pull the trigger until you see what the filing reveals.",
+      "top_signal": "The SEC filing from 17 days ago could announce a big contract, partnership, or product launch that makes the stock jump.",
+      "risk": "This is a tiny, under-the-radar company with almost no buzz \u2014 that usually means it stays quiet and flat, or the SEC filing could be boring news that disappoints."
     },
     {
       "ticker": "ASMB",
@@ -501,7 +409,7 @@
         "catalyst": 90,
         "squeeze": 68
       },
-      "position_size": 13.36,
+      "position_size": 14.27,
       "stop_loss": 23.24,
       "price_target": 42.51,
       "reddit_mentions": 0,
@@ -526,35 +434,58 @@
           "source": "SEC EDGAR 8-K"
         }
       ],
-      "headlines": [
+      "headlines": [],
+      "verdict": "WATCH",
+      "simple_explanation": "This biotech stock has some potential spark \u2014 there's an SEC filing from 18 days ago that might contain news, and short sellers are betting against it, which could cause a quick pop if things go right. But right now, nobody's talking about it, insiders aren't buying, and the confidence score is pretty low (34 out of 100), so it's too early to risk your $10-20.",
+      "upside_reason": "The SEC filing they submitted could announce good news about their drug trials or a partnership \u2014 that kind of announcement can make biotech stocks jump fast.",
+      "downside_reason": "Biotech companies are risky by nature, and with almost no buzz and no insider confidence, the stock could easily drift down or stay stuck if that filing turns out to be boring or bad news.",
+      "sentiment": "speculative",
+      "rationale": "This biotech stock has some potential spark \u2014 there's an SEC filing from 18 days ago that might contain news, and short sellers are betting against it, which could cause a quick pop if things go right. But right now, nobody's talking about it, insiders aren't buying, and the confidence score is pretty low (34 out of 100), so it's too early to risk your $10-20.",
+      "top_signal": "The SEC filing they submitted could announce good news about their drug trials or a partnership \u2014 that kind of announcement can make biotech stocks jump fast.",
+      "risk": "Biotech companies are risky by nature, and with almost no buzz and no insider confidence, the stock could easily drift down or stay stuck if that filing turns out to be boring or bad news."
+    },
+    {
+      "ticker": "LZM",
+      "company_name": "Lifezone Metals Limited",
+      "price": 5.09,
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining",
+      "total_score": 31.9,
+      "signal_breakdown": {
+        "insider": 100,
+        "reddit": 7,
+        "options": 2,
+        "catalyst": 17,
+        "squeeze": 12
+      },
+      "position_size": 13.23,
+      "stop_loss": 4.17,
+      "price_target": 7.63,
+      "reddit_mentions": 0,
+      "reddit_velocity": 0.067,
+      "catalysts": [
         {
-          "ticker": "ASMB",
-          "title": "Assembly Biosciences Announces Pricing of $100 Million Offering of Common Stock and Pre-Funded Warrants",
-          "description": "SOUTH SAN FRANCISCO, Calif., May 22, 2026 (GLOBE NEWSWIRE) -- Assembly Biosciences, Inc. (Nasdaq: ASMB), a biotechnology company developing innovative therapeutics targeting serious viral and liver diseases, today announced the pricing of an underwritten, reg\u2026",
-          "source": "GlobeNewswire",
-          "url": "https://www.globenewswire.com/news-release/2026/05/22/3300042/16259/en/Assembly-Biosciences-Announces-Pricing-of-100-Million-Offering-of-Common-Stock-and-Pre-Funded-Warrants.html",
-          "published_at": "2026-05-22T11:05:00Z"
-        },
-        {
-          "ticker": "ASMB",
-          "title": "Assembly Biosciences Announces Expansion of ABI-6250 Clinical Development Into Cholestatic Liver Diseases",
-          "description": "\u2013 Phase 2 study in cholestatic liver diseases, focused on PBC and PSC, anticipated to initiate in Q1 2027 \u2013\u2013 Builds on completed Phase 1a study and ongoing development in HDV \u2013",
-          "source": "GlobeNewswire",
-          "url": "https://www.globenewswire.com/news-release/2026/05/22/3300036/16259/en/Assembly-Biosciences-Announces-Expansion-of-ABI-6250-Clinical-Development-Into-Cholestatic-Liver-Diseases.html",
-          "published_at": "2026-05-22T11:00:00Z"
+          "type": "8-K Filing",
+          "date": "2026-04-30",
+          "days_until": -25,
+          "days_ago": 25,
+          "entity": "LZM",
+          "urgency": "MEDIUM",
+          "source": "SEC EDGAR 8-K"
         }
       ],
+      "headlines": [],
       "verdict": "WATCH",
-      "simple_explanation": "This biotech company just announced new drug trials and raised $100 million \u2014 which is good news, but the low confidence score (34.4/100) tells you the market isn't excited yet. It's worth keeping an eye on, but wait for clearer signs before spending your $10\u2013$20.",
-      "upside_reason": "If their new liver disease drug shows promising results in Phase 2 trials, the stock could jump because biotech companies get huge price moves on good drug news.",
-      "downside_reason": "Biotech is super risky \u2014 their drug could fail in trials, or the big cash raise they just did might dilute your ownership, pushing the price down.",
+      "simple_explanation": "The people running this company are putting their own money into the stock, which is a good sign they believe in it \u2014 but the overall confidence score is pretty low at 32%, meaning the data isn't screaming 'buy.' Wait and see what that SEC filing says before you commit your $10\u2013$20.",
+      "upside_reason": "That SEC filing from 25 days ago could contain news about a big mining deal or contract that makes the stock jump 20\u201350% overnight.",
+      "downside_reason": "This is a tiny mining company with almost no buzz and no recent news \u2014 it could easily drop 30% if the market just loses interest or mining prices fall.",
       "sentiment": "speculative",
-      "rationale": "This biotech company just announced new drug trials and raised $100 million \u2014 which is good news, but the low confidence score (34.4/100) tells you the market isn't excited yet. It's worth keeping an eye on, but wait for clearer signs before spending your $10\u2013$20.",
-      "top_signal": "If their new liver disease drug shows promising results in Phase 2 trials, the stock could jump because biotech companies get huge price moves on good drug news.",
-      "risk": "Biotech is super risky \u2014 their drug could fail in trials, or the big cash raise they just did might dilute your ownership, pushing the price down."
+      "rationale": "The people running this company are putting their own money into the stock, which is a good sign they believe in it \u2014 but the overall confidence score is pretty low at 32%, meaning the data isn't screaming 'buy.' Wait and see what that SEC filing says before you commit your $10\u2013$20.",
+      "top_signal": "That SEC filing from 25 days ago could contain news about a big mining deal or contract that makes the stock jump 20\u201350% overnight.",
+      "risk": "This is a tiny mining company with almost no buzz and no recent news \u2014 it could easily drop 30% if the market just loses interest or mining prices fall."
     }
   ],
-  "weekly_summary": "# This Week's Small-Cap Picks\n\nWe're watching four stocks this week\u2014UP, GSIT, ASPN, and WNC\u2014that are showing early signs of momentum, though none have triggered a full buy signal yet. VITL rounds out the list as an additional name worth monitoring if you're looking for exposure in this space.",
+  "weekly_summary": "# This Week's Small-Cap Watch List\n\nWe're keeping an eye on five stocks this week\u2014UP, ASPN, VITL, WNC, and ATOM\u2014but none of them are hitting our buy criteria just yet. We'll be watching for the right entry points as the week unfolds.",
   "metadata": {
     "stocks_screened": 200,
     "stocks_scored": 22,

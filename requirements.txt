@@ -9,6 +9,7 @@ yfinance>=0.2.50         # Stock price & fundamentals
 beautifulsoup4>=4.12.0   # HTML parsing (Finviz, Stockanalysis)
 lxml>=5.1.0              # XML parser for SEC EDGAR
 feedparser>=6.0.11       # RSS feeds
+snscrape>=0.7.0
 
 # AI
 anthropic>=0.25.0        # Claude Haiku

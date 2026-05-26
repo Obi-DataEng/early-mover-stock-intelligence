@@ -204,3 +204,56 @@ with st.sidebar:
 
     st.divider()
     st.caption("⚠️ Not financial advice. Small-cap stocks are high risk.")
+
+# ── P&L Tracker ──────────────────────────────────────────────────────────────
+st.divider()
+st.subheader("💰 P&L Tracker")
+
+if os.path.exists(DB_PATH):
+    try:
+        conn2 = sqlite3.connect(DB_PATH)
+        perf_df = pd.read_sql(
+            "SELECT ticker, pick_date, entry_price, current_price, "
+            "price_target, stop_loss, position_size, pnl_dollar, pnl_pct, status "
+            "FROM performance_tracking ORDER BY pick_date DESC, pnl_pct DESC",
+            conn2
+        )
+        conn2.close()
+
+        if not perf_df.empty:
+            total_invested = perf_df["position_size"].sum()
+            total_pnl = perf_df["pnl_dollar"].sum()
+            wins = len(perf_df[perf_df["pnl_dollar"] > 0])
+            win_rate = wins / len(perf_df) * 100
+            open_count = len(perf_df[perf_df["status"] == "open"])
+
+            c1, c2, c3, c4 = st.columns(4)
+            c1.metric("Total P&L", f"${total_pnl:.2f}",
+                      delta=f"{(total_pnl/total_invested*100):.1f}%" if total_invested > 0 else "0%")
+            c2.metric("Win Rate", f"{win_rate:.0f}%", delta=f"{wins}W / {len(perf_df)-wins}L")
+            c3.metric("Total Invested", f"${total_invested:.2f}")
+            c4.metric("Open Positions", open_count)
+
+            st.dataframe(perf_df, use_container_width=True, hide_index=True)
+
+            # Cumulative P&L chart
+            if len(perf_df["pick_date"].unique()) > 1:
+                wpnl = perf_df.groupby("pick_date")["pnl_dollar"].sum().reset_index()
+                wpnl["cumulative"] = wpnl["pnl_dollar"].cumsum()
+                fig_pnl = go.Figure()
+                fig_pnl.add_trace(go.Bar(
+                    x=wpnl["pick_date"], y=wpnl["pnl_dollar"], name="Weekly P&L",
+                    marker_color=["#3fb950" if v >= 0 else "#f85149" for v in wpnl["pnl_dollar"]]
+                ))
+                fig_pnl.add_trace(go.Scatter(
+                    x=wpnl["pick_date"], y=wpnl["cumulative"],
+                    name="Cumulative", line=dict(color="#58a6ff", width=2)
+                ))
+                fig_pnl.update_layout(plot_bgcolor="white", paper_bgcolor="white", height=280)
+                st.plotly_chart(fig_pnl, use_container_width=True)
+        else:
+            st.info("No P&L data yet — starts tracking after first live run.")
+    except Exception as e:
+        st.info(f"P&L tracker initializing: {e}")
+else:
+    st.info("Run the pipeline first to initialize tracking.")

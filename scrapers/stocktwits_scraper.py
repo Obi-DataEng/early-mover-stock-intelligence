@@ -83,7 +83,10 @@ def get_social_scores(universe: list[str]) -> pd.DataFrame:
                      "st_bullish_pct": s["bullish_pct"],
                      "st_score": round((volume_score * 0.6) + (sentiment_score * 0.4), 3)})
         time.sleep(0.5)
-    return pd.DataFrame(rows).sort_values("st_score", ascending=False).reset_index(drop=True)
+    df = pd.DataFrame(rows)
+    if df.empty or "st_score" not in df.columns:
+        return df
+    return df.sort_values("st_score", ascending=False).reset_index(drop=True)
 
 
 if __name__ == "__main__":

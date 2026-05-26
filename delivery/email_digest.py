@@ -142,6 +142,46 @@ EMAIL_TEMPLATE = """
 </div>
 {% endfor %}
 
+{% if perf and perf.total_picks and perf.total_picks > 0 %}
+<div style="background:#0d1117; color:#c9d1d9; border-radius:8px; padding:16px 18px; margin-bottom:20px;">
+  <h3 style="margin:0 0 12px; color:white; font-size:14px;">📊 All-Time Scorecard</h3>
+  <div style="display:flex; gap:20px; flex-wrap:wrap;">
+    <div style="text-align:center;">
+      <div style="font-size:22px; font-weight:bold; color:{% if perf.total_pnl >= 0 %}#3fb950{% else %}#f85149{% endif %}">
+        ${{ perf.total_pnl | round(2) }}
+      </div>
+      <div style="font-size:11px; color:#8b949e;">Total P&L</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="font-size:22px; font-weight:bold; color:{% if perf.total_return_pct >= 0 %}#3fb950{% else %}#f85149{% endif %}">
+        {{ perf.total_return_pct }}%
+      </div>
+      <div style="font-size:11px; color:#8b949e;">Total Return</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="font-size:22px; font-weight:bold; color:white;">{{ perf.win_rate }}%</div>
+      <div style="font-size:11px; color:#8b949e;">Win Rate</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="font-size:22px; font-weight:bold; color:white;">{{ perf.total_picks }}</div>
+      <div style="font-size:11px; color:#8b949e;">Total Picks</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="font-size:22px; font-weight:bold; color:#58a6ff;">{{ perf.open_positions }}</div>
+      <div style="font-size:11px; color:#8b949e;">Open</div>
+    </div>
+  </div>
+  {% if perf.best_pick %}
+  <div style="margin-top:10px; font-size:12px; color:#8b949e;">
+    🏆 Best: ${{ perf.best_pick.ticker }} +{{ perf.best_pick.pnl_pct }}% ({{ perf.best_pick.pick_date }})
+    {% if perf.worst_pick %}
+    &nbsp;·&nbsp; 📉 Worst: ${{ perf.worst_pick.ticker }} {{ perf.worst_pick.pnl_pct }}% ({{ perf.worst_pick.pick_date }})
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
 {% if watchlist %}
 <div class="watchlist">
   <h3>👀 Watch List (Signals Building)</h3>
@@ -172,6 +212,7 @@ def build_email_html(
     picks: list[dict],
     weekly_summary: str,
     watchlist: list[dict] | None = None,
+    perf_summary: dict | None = None,
 ) -> str:
     """Render the email HTML from picks data."""
     template = Template(EMAIL_TEMPLATE)
@@ -183,6 +224,7 @@ def build_email_html(
         weekly_summary=weekly_summary,
         sentiment_emoji=SENTIMENT_EMOJI,
         verdict_style=VERDICT_STYLE,
+        perf=perf_summary or {},
     )
 
 
@@ -222,9 +264,14 @@ def send_email(html_content: str, subject: str | None = None) -> bool:
         return False
 
 
-def deliver(picks: list[dict], weekly_summary: str, watchlist: list[dict] | None = None) -> bool:
+def deliver(
+    picks: list[dict],
+    weekly_summary: str,
+    watchlist: list[dict] | None = None,
+    perf_summary: dict | None = None,
+) -> bool:
     """Main entry point for email delivery."""
-    html = build_email_html(picks, weekly_summary, watchlist)
+    html = build_email_html(picks, weekly_summary, watchlist, perf_summary)
     return send_email(html)
 
 
