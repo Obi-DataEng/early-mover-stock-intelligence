@@ -196,6 +196,51 @@ EMAIL_TEMPLATE = """
 
 </div>
 
+{% if core and core.active_holdings %}
+<div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:16px 18px; margin-bottom:20px;">
+  <h3 style="margin:0 0 14px; color:#15803d; font-size:15px;">💼 This Week's Core Buy — Set It & Forget It</h3>
+  <p style="font-size:12px; color:#166534; margin:0 0 14px;">
+    These aren't picks — they're your long-term foundation. Buy these every week no matter what the market is doing.
+  </p>
+
+  {% for h in core.active_holdings %}
+  <div style="background:white; border-radius:6px; padding:12px 14px; margin-bottom:10px; border:1px solid #bbf7d0;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+      <div>
+        <span style="font-size:16px; font-weight:bold; color:#0d1117;">${{ h.ticker }}</span>
+        <span style="font-size:12px; color:#657786; margin-left:6px;">{{ h.name }}</span>
+      </div>
+      <span style="background:#15803d; color:white; border-radius:20px; padding:3px 10px; font-size:12px; font-weight:bold;">
+        BUY ${{ h.weekly_amount }}
+      </span>
+    </div>
+
+    <div style="display:flex; gap:16px; font-size:12px; color:#374151; margin-bottom:8px;">
+      <span>📈 Price: <strong>${{ h.current_price }}</strong></span>
+      <span>📦 Shares this week: <strong>{{ h.shares_this_week }}</strong></span>
+      {% if h.total_shares > 0 %}
+      <span>🏦 You own: <strong>{{ h.total_shares }} shares (${{ h.current_value }})</strong></span>
+      {% endif %}
+    </div>
+
+    <div style="font-size:11px; color:#6b7280; font-style:italic;">{{ h.why }}</div>
+  </div>
+  {% endfor %}
+
+  {% if core.projection_30yr %}
+  {% set proj = core.projection_30yr %}
+  <div style="background:#dcfce7; border-radius:6px; padding:10px 14px; margin-top:8px;">
+    <div style="font-size:12px; color:#15803d; font-weight:bold; margin-bottom:4px;">🔮 30-Year Projection (investing ${{ proj.weekly_amount }}/week)</div>
+    <div style="display:flex; gap:20px; font-size:13px; color:#166534;">
+      <div>You put in: <strong>${{ "{:,.0f}".format(proj.total_contributed) }}</strong></div>
+      <div>Market grows it to: <strong>${{ "{:,.0f}".format(proj.projected_value) }}</strong></div>
+      <div>That's <strong>{{ proj.multiplier }}x</strong> your money</div>
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
 <div class="footer">
   <strong>Early Mover</strong> · Powered by Claude Haiku · Generated {{ date }}<br>
   Signal sources: SEC EDGAR · Reddit PRAW · yfinance · NewsAPI · Finviz<br><br>
@@ -213,6 +258,7 @@ def build_email_html(
     weekly_summary: str,
     watchlist: list[dict] | None = None,
     perf_summary: dict | None = None,
+    core_data: dict | None = None,
 ) -> str:
     """Render the email HTML from picks data."""
     template = Template(EMAIL_TEMPLATE)
@@ -225,6 +271,7 @@ def build_email_html(
         sentiment_emoji=SENTIMENT_EMOJI,
         verdict_style=VERDICT_STYLE,
         perf=perf_summary or {},
+        core=core_data or {},
     )
 
 
@@ -269,9 +316,10 @@ def deliver(
     weekly_summary: str,
     watchlist: list[dict] | None = None,
     perf_summary: dict | None = None,
+    core_data: dict | None = None,
 ) -> bool:
     """Main entry point for email delivery."""
-    html = build_email_html(picks, weekly_summary, watchlist, perf_summary)
+    html = build_email_html(picks, weekly_summary, watchlist, perf_summary, core_data)
     return send_email(html)
 
 

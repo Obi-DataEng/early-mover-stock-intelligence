@@ -5,11 +5,10 @@ pandas>=2.2.0            # 2.2+ has Python 3.12/3.13/3.14 wheels on Windows
 
 # Scrapers
 praw>=7.7.1              # Reddit API
-yfinance>=0.2.50         # Stock price & fundamentals
+yfinance>=0.2.50         # Stock price & fundamentals (newer = better stability)
 beautifulsoup4>=4.12.0   # HTML parsing (Finviz, Stockanalysis)
 lxml>=5.1.0              # XML parser for SEC EDGAR
-feedparser>=6.0.11       # RSS feeds
-snscrape>=0.7.0
+feedparser>=6.0.11       # RSS feeds (SEC EDGAR alerts)
 
 # AI
 anthropic>=0.25.0        # Claude Haiku
@@ -18,11 +17,17 @@ anthropic>=0.25.0        # Claude Haiku
 jinja2>=3.1.3            # Email HTML templating (smtplib is built into Python)
 
 # Dashboard
-streamlit>=1.32.0
-plotly>=5.19.0
+streamlit>=1.32.0        # Visualization dashboard
+plotly>=5.19.0           # Charts inside Streamlit
+
+# Database
+# SQLite is built into Python — no install needed
 
 # Testing
 pytest>=8.0.0
+
+# Schwab API (Phase 2)
+schwabdev>=1.0.0              # Official Schwab API wrapper
 
 # Optional — uncomment when upgrading to Quiver
 # quiverquant>=0.1.5

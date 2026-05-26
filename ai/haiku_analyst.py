@@ -107,17 +107,23 @@ Now give me your plain-English take. Return ONLY this JSON:
 """
 
 
-def analyze_pick(stock: StockScore) -> dict:
+def analyze_pick(stock: StockScore, portfolio_context: str = "") -> dict:
     """
     Call Claude Haiku to analyze a single stock pick.
     Returns enriched dict with plain-English rationale.
+    Portfolio context personalizes recommendations to actual holdings.
     """
+    prompt = build_prompt(stock)
+    if portfolio_context:
+        prompt += f"\n\nYOUR SCHWAB PORTFOLIO CONTEXT:\n{portfolio_context}\n"
+        prompt += "Consider this when giving your recommendation — especially if the sector is already overexposed."
+
     try:
         response = client.messages.create(
             model=CLAUDE_MODEL,
             max_tokens=CLAUDE_MAX_TOKENS,
             system=ANALYST_SYSTEM_PROMPT,
-            messages=[{"role": "user", "content": build_prompt(stock)}],
+            messages=[{"role": "user", "content": prompt}],
         )
 
         raw = response.content[0].text.strip()
@@ -140,17 +146,18 @@ def analyze_pick(stock: StockScore) -> dict:
         return {}
 
 
-def analyze_all_picks(picks: list[StockScore]) -> list[dict]:
+def analyze_all_picks(picks: list[StockScore], portfolio_context: str = "") -> list[dict]:
     """
     Analyze all top picks and return enriched list of dicts.
     Budget is allocated proportionally based on score.
+    Portfolio context from Schwab personalizes the analysis.
     """
     results = []
     WEEKLY_BUDGET = 75.0
 
     for stock in picks:
         logger.info(f"Haiku analyzing ${stock.ticker}...")
-        analysis = analyze_pick(stock)
+        analysis = analyze_pick(stock, portfolio_context=portfolio_context)
 
         if not analysis:
             continue

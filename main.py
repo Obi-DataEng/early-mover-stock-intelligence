@@ -237,6 +237,23 @@ def run_pipeline(dry_run: bool = False):
 
     logger.info(f"Top picks: {[s.ticker for s in top_picks_raw]}")
 
+    # ── Schwab Portfolio Context ──────────────────────────────────────────────
+    logger.info("Fetching Schwab portfolio context...")
+    from scrapers.schwab_integration import (
+        get_account_summary, get_current_positions,
+        filter_picks_by_portfolio, get_portfolio_context
+    )
+    schwab_account  = get_account_summary()
+    schwab_positions = get_current_positions()
+    if schwab_account:
+        logger.info(
+            f"Schwab: ${schwab_account.get('total_value',0):,.2f} total | "
+            f"${schwab_account.get('buying_power',0):,.2f} buying power | "
+            f"{len(schwab_positions)} positions"
+        )
+    else:
+        logger.info("Schwab not connected — running without portfolio context")
+
     # ── Update existing position prices first ────────────────────────────────
     logger.info("Updating existing position prices...")
     from scrapers.performance_tracker import update_current_prices, get_weekly_report
@@ -248,7 +265,12 @@ def run_pipeline(dry_run: bool = False):
     # ── Haiku Analysis ────────────────────────────────────────────────────────
     logger.info("Running Claude Haiku analysis...")
     from ai.haiku_analyst import analyze_all_picks, generate_weekly_summary
-    picks = analyze_all_picks(top_picks_raw)
+    portfolio_ctx = get_portfolio_context(schwab_positions, schwab_account)
+    picks = analyze_all_picks(top_picks_raw, portfolio_context=portfolio_ctx)
+
+    # Filter picks by what's already in portfolio
+    if schwab_positions or schwab_account:
+        picks = filter_picks_by_portfolio(picks, schwab_positions, schwab_account)
     watchlist = analyze_all_picks(watchlist_raw)
     weekly_summary = generate_weekly_summary(picks)
 
@@ -281,8 +303,10 @@ def run_pipeline(dry_run: bool = False):
         logger.info("Sending email digest...")
         from delivery.email_digest import deliver
         from scrapers.performance_tracker import get_performance_summary
+        from scrapers.core_holdings import get_weekly_core_reminder
         perf_summary = get_performance_summary()
-        sent = deliver(picks, weekly_summary, watchlist, perf_summary)
+        core_data = get_weekly_core_reminder()
+        sent = deliver(picks, weekly_summary, watchlist, perf_summary, core_data)
         logger.info(f"Email sent: {sent}")
     else:
         logger.info("Dry run — skipping email delivery")
